@@ -1,7 +1,7 @@
 <header ng-controller="menuController">
 	<nav>
 	    <ul>
-			<li ng-repeat="item in items"><a href="#/" id ="home">Cenas</a></li>
+			<li ng-repeat="item in items"><a href="{{item.link}}" id ="{{item.id}}">{{item.name}}</a></li>
 	    </ul>
 	</nav>
 </header>
