@@ -47,30 +47,38 @@ angular.module('project').controller('homeController',
 );
 
 
+angular.module('project').service('menuService', 
+	function() {
+		this.getMenuItems = function() {
+			return [
+				{
+					id: 'home',
+					name: 'Home',
+					link: '#/'
+				},
+				{
+					id: 'who-we-are',
+					name: 'Quem Somos',
+					link: '#/who-we-are'
+				},
+				{
+					id: 'products',
+					name: 'Produtos',
+					link: '#/products'
+				},
+				{
+					id: 'contacts',
+					name: 'Contactos',
+					link: '#/contacts'
+				}
+			];
+		}
+	}
+)
+
 angular.module('project').controller('menuController', 
-	function($scope){
-		$scope.items = [
-			{
-				id: 'home',
-				name: 'Home',
-				link: '#/'
-			},
-			{
-				id: 'who-we-are',
-				name: 'Quem Somos',
-				link: '#/who-we-are'
-			},
-			{
-				id: 'products',
-				name: 'Produtos',
-				link: '#/products'
-			},
-			{
-				id: 'contacts',
-				name: 'Contactos',
-				link: '#/contacts'
-			}
-		];
+	function($scope, menuService){
+		$scope.items = menuService.getMenuItems();
 	}
 );
 
