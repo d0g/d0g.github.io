@@ -20,33 +20,6 @@ angular.module('project').config(function($routeProvider){
 	});
 });
 
-angular.module('project').service('homeService',
-	function(){
-
-		this.getMinutes = function (){
-			var currentDate = new Date();
-			return currentDate.getSeconds();
-		};
-
-		this.getContext = function () {
-			return 'Horas';
-		};
-	}
-);
-
-angular.module('project').controller('homeController',
-	function($scope, $interval, homeService) {
-		$scope.title = homeService.getMinutes();
-
-		$interval(function(){
-			$scope.title = homeService.getMinutes();			
-		}, 1000);
-
-		$scope.context = homeService.getContext();
-	}
-);
-
-
 angular.module('project').service('menuService', 
 	function() {
 		this.getMenuItems = function() {
