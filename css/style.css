@@ -1,128 +1,15 @@
 * {
-		padding: 0;
-		margin: 0;
-		border:0;
-		line-height: 100%;
-		font-family: Arial;
-		box-sizing:border-box;
-	}
-	
-	header,
-	footer,
-	main{
-		display: block;
-		text-align: center;
-	}
-	main{
-		margin-top:107px;
-		padding:20px 60px;
-		background-color: #dfdfdf;
-	}
-	main h1{
-		font-weight: normal;
-		font-style: italic;
-		display: block;
-		padding: 20px 0;
-		padding-top: 0;
-	}
-	main p {
-		display: block;
-		font-size: 14px;
-		line-height: 150%;
-		padding-top: 20px;
-	}
-	main img{
-		display: block;
-		width: 100%;
-	}
-	header {
-		background-color:#999999;
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-	}
-	header ul{
-		text-align: center;
-		display: table;
-		width: 100%;
-	}
-	header li {
-		display: table-cell;
-		vertical-align: middle;
-	}
+	padding: 0;
+	margin: 0;
+	border:0;
+	line-height: 100%;
+	font-family: Arial;
+	box-sizing:border-box;
+}
 
-	header li,
-	header li a{
-		display: inline-block;
-	}
-	header li a {
-		height: 102px;
-		width: 204px;
-		font-size: 16px;
-		font-weight: bold;
-		color: white; 
-		text-decoration: none;
-		display: table-cell;
-		vertical-align: middle;
-	}
-	header li a.selected {
-		border-bottom: 5px solid black;
-	}
-	header a#home{
-		background-color: red;
-	}
-	header a#who-we-are{
-		background-color: #FFD700;
-	}
-	header a#products{
-		background-color: green;
-	}
-	header a#contacts{
-		background-color: blue;
-	}
-
-	.products li{
-		display: inline-block;
-		padding:25px;
-		background-color: white;
-	}
-	.products li img{
-		width: 500px;
-	}
-	footer{
-		padding: 40px;
-	}
-	.hide{	
-		display: none;
-	}
-	
-	main form label{
-		display: inline-block;
-		background-color: black;
-		padding: 5px;
-		font-weight: 14px;
-		color: white;
-	}
-	main form input,
-	main form textarea{
-		padding: 20px;
-		font-size:16px;
-		font-weight: bold;
-		border:1px solid black;
-		width: 600px;
-	}
-	main form textarea{
-		height: 300px; 
-	}
-	main form button {
-		display: inline-block;
-		padding: 15px;
-		border:2px solid black;
-		color:white;
-		background-color:#999999;
-		width: 600px;
-	}
-	.input-container {
-		margin-bottom:20px;
-	}
+header,
+footer,
+main{
+	display: block;
+	text-align: center;
+}
