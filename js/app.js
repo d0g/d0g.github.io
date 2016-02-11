@@ -1,4 +1,4 @@
-angular.module('project', ['ngRoute']);
+angular.module('project', ['ngRoute', 'ngMaterial']);
 
 angular.module('project').config(function($routeProvider){
 
